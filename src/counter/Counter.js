@@ -6,24 +6,26 @@ class Counter extends React.Component {
 		return (
 			<div className="counter">
 				<p>Count: {this.props.count}</p>
-				<button
-					onClick={this.props.increaseCount}
-					className="btn btn-primary"
-				>
-					Increase
-				</button>
-				<button
-					onClick={this.props.decreaseCount}
-					className="btn btn-warning"
-				>
-					Decrease
-				</button>
-				<button
-					onClick={this.props.resetCount}
-					className="btn btn-default"
-				>
-					Reset
-				</button>
+				<div className="btn-group" role="group" aria-label="controls">
+					<button
+						onClick={this.props.increaseCount}
+						className="btn btn-primary"
+					>
+						Increase
+					</button>
+					<button
+						onClick={this.props.decreaseCount}
+						className="btn btn-warning"
+					>
+						Decrease
+					</button>
+					<button
+						onClick={this.props.resetCount}
+						className="btn btn-default"
+					>
+						Reset
+					</button>
+				</div>
 			</div>
 		);
 	}
