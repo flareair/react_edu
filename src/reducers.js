@@ -2,6 +2,7 @@ import { INCREASE_COUNT, DECREASE_COUNT, RESET_COUNT } from './actions';
 
 const initialCount = 10;
 const initialState = {
+	appName: 'React/Redux app',
 	count: initialCount
 };
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDom from 'react-dom';
 
-import App from './app';
+import App from './App';
 
 import { applyMiddleware, createStore } from 'redux';
 import { appReducer } from './reducers';
